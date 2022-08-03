@@ -1,0 +1,119 @@
+/* specification */
+
+body {
+	font-family: 'Times New Roman', serif;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+}
+
+.modal_open {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 40px;
+    width: 65%;
+    height: 65%;
+    text-align: center;
+    border: 1px solid #35b3b8;
+    background-color: aliceblue;
+}
+
+.modal__close {
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+}
+
+.modal__close:hover {
+    text-decoration: none;
+    color: red;
+    transition: 0.2ms;
+    opacity: 0.8;
+}
+
+.modal__title {
+    font-size: 20px;
+    margin-top: 17px;
+}
+
+/* Main styles */
+
+.header {
+    display: block;
+}
+
+.header_hidden {
+    display: none;
+}
+
+.section__wrapper, .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    border: 1px solid #000;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    height: 100px;
+}
+
+/* Block 1 */
+
+.block_first {
+    width: 100%;
+}
+
+/* Block 2 */
+
+.block_second {
+    background-color: #030;
+}
+
+/* Block 3 */
+
+.block_third {
+    border: 1px dashed #000;
+    background-color: rgba(169, 23, 103, 0.61);
+}
+
+/* Block 4 */
+
+.block_fourth {
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    .section__wrapper, .footer__wrapper {
+        display: block;
+    }
+}
